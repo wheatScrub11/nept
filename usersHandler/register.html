@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="usersHandler.js" type="module" defer></script>
+    <title>Sing Up</title>
+</head>
+<body>
+    <div class="register-container">
+        <h2 class="current-user"></h2>
+        <h1>Sing Up</h1>
+
+        <label for="email">Email</label>
+        <input type="text" class="registerEmail" onchange="">
+
+        <label for="email" class="margin">Password</label>
+        <input type="text" class="registerPassword" placeholder="6 characters or longer">
+
+        <button class="register-btn margin">Register</button>
+
+        <div class="log-in-container">
+            <h1>Log In</h1>
+    
+            <label for="email">Email</label>
+            <input type="text" class="loginEmail">
+    
+            <label for="email" class="margin">Password</label>
+            <input type="text" class="loginPassword">
+            
+            <button class="log-in-btn margin">Log In</button>
+        </div>
+        <div class="back-home">
+            <button class="register-btn"><a href="../index.html">Go Home</a></button>
+        </div>
+        
+    </div>
+
+
+    <style>
+        .back-home{
+            text-align: center;
+            padding: 1em 0em;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .register-container{
+            width: 300px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .register-btn{
+            width: 100px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+         .log-in-container{
+            width: 300px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .log-in-btn{
+            width: 100px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .margin{
+            margin-top: 1em;
+        }
+    </style>
+</body>
+</html>
